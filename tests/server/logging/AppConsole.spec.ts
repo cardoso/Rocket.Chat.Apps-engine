@@ -1,7 +1,7 @@
 // tslint:disable:max-classes-per-file
 
-import { ILogEntry, LogMessageSeverity } from '@rocket.chat/apps-ts-definition/accessors';
-import { AppMethod } from '@rocket.chat/apps-ts-definition/metadata';
+import { ILogEntry, LogMessageSeverity } from '@rocket.chat/apps-ts-definition';
+import { AppMethod } from '@rocket.chat/apps-ts-definition';
 import { Expect, SpyOn, Test } from 'alsatian';
 import * as stackTrace from 'stack-trace';
 

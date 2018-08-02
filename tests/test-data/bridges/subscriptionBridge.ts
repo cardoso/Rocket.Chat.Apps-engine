@@ -1,4 +1,4 @@
-import { ISubscription } from '@rocket.chat/apps-ts-definition/subscriptions';
+import { ISubscription } from '@rocket.chat/apps-ts-definition';
 
 import { ISubscriptionBridge } from '../../../src/server/bridges';
 

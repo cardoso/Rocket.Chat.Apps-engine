@@ -1,6 +1,6 @@
-import { App } from '@rocket.chat/apps-ts-definition/App';
-import { AppStatus } from '@rocket.chat/apps-ts-definition/AppStatus';
-import { IAppInfo } from '@rocket.chat/apps-ts-definition/metadata';
+import { App } from '@rocket.chat/apps-ts-definition';
+import { AppStatus } from '@rocket.chat/apps-ts-definition';
+import { IAppInfo } from '@rocket.chat/apps-ts-definition';
 import { Expect, Test } from 'alsatian';
 
 import { AppManager } from '../../../src/server/AppManager';

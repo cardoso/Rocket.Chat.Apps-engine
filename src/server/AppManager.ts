@@ -11,8 +11,8 @@ import { DisabledApp } from './misc/DisabledApp';
 import { ProxiedApp } from './ProxiedApp';
 import { AppLogStorage, AppStorage, IAppStorageItem } from './storage';
 
-import { AppStatus, AppStatusUtils } from '@rocket.chat/apps-ts-definition/AppStatus';
-import { AppMethod } from '@rocket.chat/apps-ts-definition/metadata';
+import { AppStatus, AppStatusUtils } from '@rocket.chat/apps-ts-definition';
+import { AppMethod } from '@rocket.chat/apps-ts-definition';
 
 export class AppManager {
     public static Instance: AppManager;

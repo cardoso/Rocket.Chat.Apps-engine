@@ -1,5 +1,5 @@
-import { IUserRead } from '@rocket.chat/apps-ts-definition/accessors';
-import { IUser } from '@rocket.chat/apps-ts-definition/users';
+import { IUserRead } from '@rocket.chat/apps-ts-definition';
+import { IUser } from '@rocket.chat/apps-ts-definition';
 import { IUserBridge } from '../bridges/IUserBridge';
 
 export class UserRead implements IUserRead {

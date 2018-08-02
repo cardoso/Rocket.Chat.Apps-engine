@@ -1,5 +1,5 @@
-import { AppMethod } from '@rocket.chat/apps-ts-definition/metadata';
-import { ISlashCommand } from '@rocket.chat/apps-ts-definition/slashcommands';
+import { AppMethod } from '@rocket.chat/apps-ts-definition';
+import { ISlashCommand } from '@rocket.chat/apps-ts-definition';
 import { Expect, SetupFixture, Test } from 'alsatian';
 
 import { AppSlashCommand } from '../../../src/server/managers/AppSlashCommand';

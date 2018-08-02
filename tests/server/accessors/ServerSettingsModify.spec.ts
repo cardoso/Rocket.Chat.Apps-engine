@@ -1,4 +1,4 @@
-import { ISetting } from '@rocket.chat/apps-ts-definition/settings';
+import { ISetting } from '@rocket.chat/apps-ts-definition';
 import { AsyncTest, Expect, SetupFixture, SpyOn } from 'alsatian';
 
 import { ServerSettingsModify } from '../../../src/server/accessors';

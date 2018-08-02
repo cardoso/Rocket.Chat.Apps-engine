@@ -1,5 +1,5 @@
-import { IRoom } from '@rocket.chat/apps-ts-definition/rooms';
-import { IUser } from '@rocket.chat/apps-ts-definition/users';
+import { IRoom } from '@rocket.chat/apps-ts-definition';
+import { IUser } from '@rocket.chat/apps-ts-definition';
 import { AsyncTest, Expect, SetupFixture } from 'alsatian';
 
 import { RoomRead } from '../../../src/server/accessors';

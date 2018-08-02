@@ -1,6 +1,6 @@
-import { IMessageExtender, IModifyExtender, IRoomExtender } from '@rocket.chat/apps-ts-definition/accessors';
-import { RocketChatAssociationModel } from '@rocket.chat/apps-ts-definition/metadata';
-import { IUser } from '@rocket.chat/apps-ts-definition/users';
+import { IMessageExtender, IModifyExtender, IRoomExtender } from '@rocket.chat/apps-ts-definition';
+import { RocketChatAssociationModel } from '@rocket.chat/apps-ts-definition';
+import { IUser } from '@rocket.chat/apps-ts-definition';
 
 import { AppBridges } from '../bridges/AppBridges';
 import { MessageExtender } from './MessageExtender';

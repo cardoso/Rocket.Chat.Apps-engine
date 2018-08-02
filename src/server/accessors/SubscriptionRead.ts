@@ -1,5 +1,5 @@
-import { ISubscriptionRead } from '@rocket.chat/apps-ts-definition/accessors';
-import { ISubscription } from '@rocket.chat/apps-ts-definition/subscriptions';
+import { ISubscriptionRead } from '@rocket.chat/apps-ts-definition';
+import { ISubscription } from '@rocket.chat/apps-ts-definition';
 
 import { ISubscriptionBridge } from '../bridges';
 

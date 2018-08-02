@@ -1,7 +1,7 @@
-import { IMessageBuilder, IModifyCreator, IRoomBuilder } from '@rocket.chat/apps-ts-definition/accessors';
-import { IMessage } from '@rocket.chat/apps-ts-definition/messages';
-import { RocketChatAssociationModel } from '@rocket.chat/apps-ts-definition/metadata';
-import { IRoom } from '@rocket.chat/apps-ts-definition/rooms';
+import { IMessageBuilder, IModifyCreator, IRoomBuilder } from '@rocket.chat/apps-ts-definition';
+import { IMessage } from '@rocket.chat/apps-ts-definition';
+import { RocketChatAssociationModel } from '@rocket.chat/apps-ts-definition';
+import { IRoom } from '@rocket.chat/apps-ts-definition';
 
 import { AppBridges } from '../bridges';
 import { MessageBuilder } from './MessageBuilder';

@@ -1,4 +1,4 @@
-import { IHttpRequest, IHttpResponse, RequestMethod } from '@rocket.chat/apps-ts-definition/accessors';
+import { IHttpRequest, IHttpResponse, RequestMethod } from '@rocket.chat/apps-ts-definition';
 
 export interface IHttpBridge {
     call(info: IHttpBridgeRequestInfo): Promise<IHttpResponse>;

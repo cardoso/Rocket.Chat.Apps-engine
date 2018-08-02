@@ -44,8 +44,12 @@ jspm_packages
 ## Ignore downloaded typings
 /typings
 
-## Ignore distribution folder
-dist/
+## Ignore distribution folders
+/server/
+/client/
+/index.js
+/index.js.map
+/index.d.ts
 
 ## dev environment stuff
 examples/

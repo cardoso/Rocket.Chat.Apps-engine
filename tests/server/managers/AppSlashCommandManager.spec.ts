@@ -1,8 +1,8 @@
 // tslint:disable:max-line-length
 
-import { AppStatus } from '@rocket.chat/apps-ts-definition/AppStatus';
-import { AppMethod } from '@rocket.chat/apps-ts-definition/metadata';
-import { ISlashCommandPreviewItem, SlashCommandContext } from '@rocket.chat/apps-ts-definition/slashcommands';
+import { AppStatus } from '@rocket.chat/apps-ts-definition';
+import { AppMethod } from '@rocket.chat/apps-ts-definition';
+import { ISlashCommandPreviewItem, SlashCommandContext } from '@rocket.chat/apps-ts-definition';
 import { AsyncTest, Expect, FunctionSpy, RestorableFunctionSpy, Setup, SetupFixture, SpyOn, Teardown, Test } from 'alsatian';
 import * as vm from 'vm';
 import { TestsAppBridges } from '../../test-data/bridges/appBridges';

@@ -1,7 +1,7 @@
-import { ILogger } from '@rocket.chat/apps-ts-definition/accessors';
-import { App } from '@rocket.chat/apps-ts-definition/App';
-import { AppStatus } from '@rocket.chat/apps-ts-definition/AppStatus';
-import { AppMethod, IAppInfo } from '@rocket.chat/apps-ts-definition/metadata';
+import { ILogger } from '@rocket.chat/apps-ts-definition';
+import { App } from '@rocket.chat/apps-ts-definition';
+import { AppStatus } from '@rocket.chat/apps-ts-definition';
+import { AppMethod, IAppInfo } from '@rocket.chat/apps-ts-definition';
 import { AppConsole } from '../logging';
 
 export class DisabledApp extends App {

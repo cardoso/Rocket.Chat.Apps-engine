@@ -1,4 +1,4 @@
-import { ISetting } from '@rocket.chat/apps-ts-definition/settings';
+import { ISetting } from '@rocket.chat/apps-ts-definition';
 
 export interface IServerSettingBridge {
     getAll(appId: string): Promise<Array<ISetting>>;

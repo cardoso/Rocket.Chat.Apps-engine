@@ -1,6 +1,6 @@
-import { AppStatus } from '@rocket.chat/apps-ts-definition/AppStatus';
-import { IAppInfo } from '@rocket.chat/apps-ts-definition/metadata';
-import { ISetting } from '@rocket.chat/apps-ts-definition/settings';
+import { AppStatus } from '@rocket.chat/apps-ts-definition';
+import { IAppInfo } from '@rocket.chat/apps-ts-definition';
+import { ISetting } from '@rocket.chat/apps-ts-definition';
 
 export interface IAppStorageItem {
     _id?: string;

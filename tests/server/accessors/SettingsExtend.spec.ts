@@ -1,4 +1,4 @@
-import { ISetting, SettingType } from '@rocket.chat/apps-ts-definition/settings';
+import { ISetting, SettingType } from '@rocket.chat/apps-ts-definition';
 import { AsyncTest, Expect, Test } from 'alsatian';
 
 import { SettingsExtend } from '../../../src/server/accessors';

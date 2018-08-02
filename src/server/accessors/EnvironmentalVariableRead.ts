@@ -1,6 +1,6 @@
 import { IEnvironmentalVariableBridge } from '../bridges';
 
-import { IEnvironmentalVariableRead } from '@rocket.chat/apps-ts-definition/accessors';
+import { IEnvironmentalVariableRead } from '@rocket.chat/apps-ts-definition';
 
 export class EnvironmentalVariableRead implements IEnvironmentalVariableRead {
     constructor(private readonly bridge: IEnvironmentalVariableBridge, private readonly appId: string) {}

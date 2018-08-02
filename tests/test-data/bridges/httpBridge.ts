@@ -1,4 +1,4 @@
-import { IHttpResponse } from '@rocket.chat/apps-ts-definition/accessors';
+import { IHttpResponse } from '@rocket.chat/apps-ts-definition';
 
 import { IHttpBridge, IHttpBridgeRequestInfo } from '../../../src/server/bridges';
 

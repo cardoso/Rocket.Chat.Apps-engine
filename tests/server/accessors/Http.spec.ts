@@ -1,4 +1,4 @@
-import { IHttpExtend, IHttpPreRequestHandler, IHttpPreResponseHandler, IHttpRequest, IHttpResponse, IPersistence, IRead } from '@rocket.chat/apps-ts-definition/accessors';
+import { IHttpExtend, IHttpPreRequestHandler, IHttpPreResponseHandler, IHttpRequest, IHttpResponse, IPersistence, IRead } from '@rocket.chat/apps-ts-definition';
 import { AsyncTest, Expect, SetupFixture, SpyOn } from 'alsatian';
 
 import { Http, HttpExtend } from '../../../src/server/accessors';

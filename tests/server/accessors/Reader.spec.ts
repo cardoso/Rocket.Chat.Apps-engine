@@ -1,4 +1,4 @@
-import { IEnvironmentRead, IMessageRead, INotifier, IPersistenceRead, IRoomRead, ISubscriptionRead, IUserRead } from '@rocket.chat/apps-ts-definition/accessors';
+import { IEnvironmentRead, IMessageRead, INotifier, IPersistenceRead, IRoomRead, ISubscriptionRead, IUserRead } from '@rocket.chat/apps-ts-definition';
 import { Expect, SetupFixture, Test } from 'alsatian';
 
 import { Reader } from '../../../src/server/accessors';

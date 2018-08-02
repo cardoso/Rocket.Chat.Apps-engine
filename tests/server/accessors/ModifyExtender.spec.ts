@@ -1,5 +1,5 @@
-import { IMessage } from '@rocket.chat/apps-ts-definition/messages';
-import { IRoom } from '@rocket.chat/apps-ts-definition/rooms';
+import { IMessage } from '@rocket.chat/apps-ts-definition';
+import { IRoom } from '@rocket.chat/apps-ts-definition';
 import { AsyncTest, Expect, SetupFixture, SpyOn } from 'alsatian';
 
 import { ModifyExtender } from '../../../src/server/accessors';

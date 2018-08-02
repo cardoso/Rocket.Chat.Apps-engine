@@ -1,3 +1,4 @@
+import * as definition from '@rocket.chat/apps-ts-definition';
 import cloneDeep = require('lodash.clonedeep');
 import * as path from 'path';
 import * as vm from 'vm';
@@ -32,6 +33,10 @@ export class Utilities {
 
     public static buildCustomRequire(files: { [s: string]: ICompilerFile }): (mod: string) => {} {
         return function _requirer(mod: string): any {
+            // Keep compatibility with apps importing apps-ts-definition
+            if (mod === '@rocket.chat/apps-engine' || mod.startsWith('@rocket.chat/apps-ts-definition')) {
+                return definition;
+            }
             if (files[Utilities.transformModuleForCustomRequire(mod)]) {
                 const ourExport = {};
                 const context = vm.createContext({

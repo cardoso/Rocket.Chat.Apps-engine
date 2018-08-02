@@ -1,4 +1,4 @@
-import { AppStatus } from '@rocket.chat/apps-ts-definition/AppStatus';
+import { AppStatus } from '@rocket.chat/apps-ts-definition';
 import { ProxiedApp } from '../ProxiedApp';
 
 export interface IAppActivationBridge {

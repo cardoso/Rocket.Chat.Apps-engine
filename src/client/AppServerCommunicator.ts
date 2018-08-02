@@ -1,4 +1,4 @@
-import { IAppInfo } from '@rocket.chat/apps-ts-definition/metadata';
+import { IAppInfo } from '@rocket.chat/apps-ts-definition';
 
 export abstract class AppServerCommunicator {
     public abstract getEnabledApps(): Promise<Array<IAppInfo>>;

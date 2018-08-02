@@ -1,4 +1,4 @@
-import { IEnvironmentalVariableRead, IServerSettingRead, ISettingRead } from '@rocket.chat/apps-ts-definition/accessors';
+import { IEnvironmentalVariableRead, IServerSettingRead, ISettingRead } from '@rocket.chat/apps-ts-definition';
 import { Expect, SetupFixture, Test } from 'alsatian';
 
 import { EnvironmentRead } from '../../../src/server/accessors';

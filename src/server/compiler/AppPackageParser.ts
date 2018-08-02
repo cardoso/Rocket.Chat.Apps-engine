@@ -3,7 +3,7 @@ import { AppCompiler } from './AppCompiler';
 import { ICompilerFile } from './ICompilerFile';
 import { IParseZipResult } from './IParseZipResult';
 
-import { IAppInfo } from '@rocket.chat/apps-ts-definition/metadata/IAppInfo';
+import { IAppInfo, version } from '@rocket.chat/apps-ts-definition';
 import * as AdmZip from 'adm-zip';
 import * as fs from 'fs';
 import * as path from 'path';
@@ -150,7 +150,9 @@ export class AppPackageParser {
         // tslint:disable-next-line
         const prodLocation = __dirname.split('@rocket.chat/apps-engine')[0] + '@rocket.chat/apps-ts-definition/package.json';
 
-        if (fs.existsSync(devLocation)) {
+        if (version) {
+            return version as string;
+        } else if (fs.existsSync(devLocation)) {
             const info = JSON.parse(fs.readFileSync(devLocation, 'utf8'));
             return info.version as string;
         } else if (fs.existsSync(prodLocation)) {

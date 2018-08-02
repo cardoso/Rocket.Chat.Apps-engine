@@ -1,4 +1,4 @@
-import { IUser } from '@rocket.chat/apps-ts-definition/users';
+import { IUser } from '@rocket.chat/apps-ts-definition';
 import { AsyncTest, Expect, SetupFixture } from 'alsatian';
 
 import { UserRead } from '../../../src/server/accessors';

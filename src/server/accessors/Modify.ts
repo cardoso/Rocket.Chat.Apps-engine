@@ -4,7 +4,7 @@ import {
     IModifyExtender,
     IModifyUpdater,
     INotifier,
-} from '@rocket.chat/apps-ts-definition/accessors';
+} from '@rocket.chat/apps-ts-definition';
 
 import { AppBridges } from '../bridges';
 import { ModifyCreator } from './ModifyCreator';

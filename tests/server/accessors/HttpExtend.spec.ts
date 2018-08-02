@@ -1,4 +1,4 @@
-import { IHttpPreRequestHandler, IHttpPreResponseHandler } from '@rocket.chat/apps-ts-definition/accessors';
+import { IHttpPreRequestHandler, IHttpPreResponseHandler } from '@rocket.chat/apps-ts-definition';
 import { Expect, Test } from 'alsatian';
 
 import { HttpExtend } from '../../../src/server/accessors';

@@ -1,4 +1,4 @@
-import { IServerSettingsModify, ISlashCommandsModify } from '@rocket.chat/apps-ts-definition/accessors';
+import { IServerSettingsModify, ISlashCommandsModify } from '@rocket.chat/apps-ts-definition';
 import { Expect, SetupFixture, Test } from 'alsatian';
 
 import { ConfigurationModify } from '../../../src/server/accessors';

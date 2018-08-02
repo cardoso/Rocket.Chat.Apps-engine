@@ -1,4 +1,4 @@
-import { ISetting } from '@rocket.chat/apps-ts-definition/settings';
+import { ISetting } from '@rocket.chat/apps-ts-definition';
 
 import { IAppDetailChangesBridge } from '../../../src/server/bridges';
 

@@ -1,9 +1,9 @@
 import { IMessageBridge } from '../bridges/IMessageBridge';
 
-import { IMessageRead } from '@rocket.chat/apps-ts-definition/accessors';
-import { IMessage } from '@rocket.chat/apps-ts-definition/messages';
-import { IRoom } from '@rocket.chat/apps-ts-definition/rooms';
-import { IUser } from '@rocket.chat/apps-ts-definition/users';
+import { IMessageRead } from '@rocket.chat/apps-ts-definition';
+import { IMessage } from '@rocket.chat/apps-ts-definition';
+import { IRoom } from '@rocket.chat/apps-ts-definition';
+import { IUser } from '@rocket.chat/apps-ts-definition';
 
 export class MessageRead implements IMessageRead {
     constructor(private messageBridge: IMessageBridge, private appId: string) { }

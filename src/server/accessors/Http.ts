@@ -4,7 +4,7 @@ import {
     IHttpRequest,
     IHttpResponse,
     RequestMethod,
-} from '@rocket.chat/apps-ts-definition/accessors';
+} from '@rocket.chat/apps-ts-definition';
 import { AppBridges } from '../bridges/AppBridges';
 import { AppAccessorManager } from '../managers/AppAccessorManager';
 

@@ -1,4 +1,4 @@
-import { IHttpExtend, ISettingsExtend, ISlashCommandsExtend } from '@rocket.chat/apps-ts-definition/accessors';
+import { IHttpExtend, ISettingsExtend, ISlashCommandsExtend } from '@rocket.chat/apps-ts-definition';
 import { Expect, SetupFixture, Test } from 'alsatian';
 
 import { ConfigurationExtend } from '../../../src/server/accessors';

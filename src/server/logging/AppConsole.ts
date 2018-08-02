@@ -1,7 +1,7 @@
 import * as stackTrace from 'stack-trace';
 
-import { ILogEntry, ILogger, LogMessageSeverity } from '@rocket.chat/apps-ts-definition/accessors';
-import { AppMethod } from '@rocket.chat/apps-ts-definition/metadata';
+import { ILogEntry, ILogger, LogMessageSeverity } from '@rocket.chat/apps-ts-definition';
+import { AppMethod } from '@rocket.chat/apps-ts-definition';
 import { ILoggerStorageEntry } from './ILoggerStorageEntry';
 
 export class AppConsole implements ILogger {

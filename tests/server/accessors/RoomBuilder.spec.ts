@@ -1,4 +1,4 @@
-import { IRoom, RoomType } from '@rocket.chat/apps-ts-definition/rooms';
+import { IRoom, RoomType } from '@rocket.chat/apps-ts-definition';
 import { Expect, Test } from 'alsatian';
 import { TestData } from '../../test-data/utilities';
 

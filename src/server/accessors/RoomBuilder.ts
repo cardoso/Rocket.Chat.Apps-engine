@@ -1,7 +1,7 @@
-import { IRoomBuilder } from '@rocket.chat/apps-ts-definition/accessors';
-import { RocketChatAssociationModel } from '@rocket.chat/apps-ts-definition/metadata';
-import { IRoom, RoomType } from '@rocket.chat/apps-ts-definition/rooms';
-import { IUser } from '@rocket.chat/apps-ts-definition/users';
+import { IRoomBuilder } from '@rocket.chat/apps-ts-definition';
+import { RocketChatAssociationModel } from '@rocket.chat/apps-ts-definition';
+import { IRoom, RoomType } from '@rocket.chat/apps-ts-definition';
+import { IUser } from '@rocket.chat/apps-ts-definition';
 
 export class RoomBuilder implements IRoomBuilder {
     public kind: RocketChatAssociationModel.ROOM;

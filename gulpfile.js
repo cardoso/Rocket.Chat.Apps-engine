@@ -14,7 +14,7 @@ if (testIndex > -1) {
 }
 
 gulp.task('clean-generated', function _cleanTypescript() {
-    return del(['./dist/**']);
+    return del(['./server/**', './client/**']);
 });
 
 gulp.task('lint-ts', function _lintTypescript() {
@@ -25,7 +25,7 @@ gulp.task('compile-ts', ['clean-generated', 'lint-ts'], function _compileTypescr
     return tsp.src().pipe(sourcemaps.init())
             .pipe(tsp())
             .pipe(sourcemaps.write('.'))
-            .pipe(gulp.dest('dist'));
+            .pipe(gulp.dest('.'));
 });
 
 gulp.task('default', ['clean-generated', 'lint-ts', 'compile-ts']);
@@ -36,9 +36,9 @@ gulp.task('npm-files', ['clean-generated'], function _npmFileGathering() {
 });
 
 gulp.task('pack', ['clean-generated', 'lint-ts', 'compile-ts', 'npm-files'], shell.task([
-    'cd dist && npm pack'
+    'npm pack'
 ]));
 
 gulp.task('publish', ['clean-generated', 'lint-ts', 'compile-ts', 'npm-files'], shell.task([
-    'cd dist && npm publish --access public && npm pack'
+    'npm publish --access public && npm pack'
 ]));

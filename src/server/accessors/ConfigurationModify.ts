@@ -2,7 +2,7 @@ import {
     IConfigurationModify,
     IServerSettingsModify,
     ISlashCommandsModify,
-} from '@rocket.chat/apps-ts-definition/accessors';
+} from '@rocket.chat/apps-ts-definition';
 
 export class ConfigurationModify implements IConfigurationModify {
     public readonly serverSettings: IServerSettingsModify;

@@ -1,6 +1,6 @@
-import { IMessageExtender } from '@rocket.chat/apps-ts-definition/accessors';
-import { IMessage, IMessageAttachment } from '@rocket.chat/apps-ts-definition/messages';
-import { RocketChatAssociationModel } from '@rocket.chat/apps-ts-definition/metadata';
+import { IMessageExtender } from '@rocket.chat/apps-ts-definition';
+import { IMessage, IMessageAttachment } from '@rocket.chat/apps-ts-definition';
+import { RocketChatAssociationModel } from '@rocket.chat/apps-ts-definition';
 
 import { Utilities } from '../misc/Utilities';
 
