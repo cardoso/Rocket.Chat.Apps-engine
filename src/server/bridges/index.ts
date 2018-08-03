@@ -8,8 +8,8 @@ import { IListenerBridge } from './IListenerBridge';
 import { IMessageBridge } from './IMessageBridge';
 import { IPersistenceBridge } from './IPersistenceBridge';
 import { IRoomBridge } from './IRoomBridge';
+import { IRoomSubscriptionBridge } from './IRoomSubscriptionBridge';
 import { IServerSettingBridge } from './IServerSettingBridge';
-import { ISubscriptionBridge } from './ISubscriptionBridge';
 import { IUserBridge } from './IUserBridge';
 
 export {
@@ -24,7 +24,7 @@ export {
     IAppCommandBridge,
     IRoomBridge,
     IServerSettingBridge,
-    ISubscriptionBridge,
+    IRoomSubscriptionBridge,
     IUserBridge,
     AppBridges,
 };

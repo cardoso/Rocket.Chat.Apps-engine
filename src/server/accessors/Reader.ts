@@ -5,7 +5,7 @@ import {
     IPersistenceRead,
     IRead,
     IRoomRead,
-    ISubscriptionRead,
+    IRoomSubscriptionRead,
     IUserRead,
 } from '@rocket.chat/apps-ts-definition';
 
@@ -14,7 +14,7 @@ export class Reader implements IRead {
                 private message: IMessageRead,
                 private persist: IPersistenceRead,
                 private room: IRoomRead,
-                private subscription: ISubscriptionRead,
+                private roomSubscription: IRoomSubscriptionRead,
                 private user: IUserRead,
                 private noti: INotifier) { }
 
@@ -33,8 +33,8 @@ export class Reader implements IRead {
     public getRoomReader(): IRoomRead {
         return this.room;
     }
-    public getSubscriptionReader(): ISubscriptionRead {
-        return this.subscription;
+    public getRoomSubscriptionReader(): IRoomSubscriptionRead {
+        return this.roomSubscription;
     }
 
     public getUserReader(): IUserRead {

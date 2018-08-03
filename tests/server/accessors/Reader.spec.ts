@@ -1,4 +1,4 @@
-import { IEnvironmentRead, IMessageRead, INotifier, IPersistenceRead, IRoomRead, ISubscriptionRead, IUserRead } from '@rocket.chat/apps-ts-definition';
+import { IEnvironmentRead, IMessageRead, INotifier, IPersistenceRead, IRoomRead, IRoomSubscriptionRead, IUserRead } from '@rocket.chat/apps-ts-definition';
 import { Expect, SetupFixture, Test } from 'alsatian';
 
 import { Reader } from '../../../src/server/accessors';
@@ -8,7 +8,7 @@ export class ReaderAccessorTestFixture {
     private msg: IMessageRead;
     private pr: IPersistenceRead;
     private rm: IRoomRead;
-    private sb: ISubscriptionRead;
+    private sb: IRoomSubscriptionRead;
     private ur: IUserRead;
     private ni: INotifier;
 
@@ -18,7 +18,7 @@ export class ReaderAccessorTestFixture {
         this.msg = {} as IMessageRead;
         this.pr = {} as IPersistenceRead;
         this.rm = {} as IRoomRead;
-        this.sb = {} as ISubscriptionRead;
+        this.sb = {} as IRoomSubscriptionRead;
         this.ur = {} as IUserRead;
         this.ni = {} as INotifier;
     }

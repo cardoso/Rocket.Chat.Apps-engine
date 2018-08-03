@@ -8,8 +8,8 @@ import {
     IMessageBridge,
     IPersistenceBridge,
     IRoomBridge,
+    IRoomSubscriptionBridge,
     IServerSettingBridge,
-    ISubscriptionBridge,
     IUserBridge,
 } from '../../../src/server/bridges';
 import { TestsActivationBridge } from './activationBridge';
@@ -20,8 +20,8 @@ import { TestsHttpBridge } from './httpBridge';
 import { TestsMessageBridge } from './messageBridge';
 import { TestsPersisBridge } from './persisBridge';
 import { TestsRoomBridge } from './roomBridge';
+import { TestsRoomSubscriptionBridge } from './roomSubscriptionBridge';
 import { TestsServerSettingBridge } from './serverSettingBridge';
-import { TestsSubscriptionBridge } from './subscriptionBridge';
 import { TestsUserBridge } from './userBridge';
 
 export class TestsAppBridges extends AppBridges {
@@ -33,7 +33,7 @@ export class TestsAppBridges extends AppBridges {
     private readonly msgBridge: TestsMessageBridge;
     private readonly persisBridge: TestsPersisBridge;
     private readonly roomBridge: TestsRoomBridge;
-    private readonly subscriptionBridge: TestsSubscriptionBridge;
+    private readonly roomSubscriptionBridge: TestsRoomSubscriptionBridge;
     private readonly userBridge: TestsUserBridge;
     private readonly httpBridge: TestsHttpBridge;
 
@@ -47,7 +47,7 @@ export class TestsAppBridges extends AppBridges {
         this.msgBridge = new TestsMessageBridge();
         this.persisBridge = new TestsPersisBridge();
         this.roomBridge = new TestsRoomBridge();
-        this.subscriptionBridge = new TestsSubscriptionBridge();
+        this.roomSubscriptionBridge = new TestsRoomSubscriptionBridge();
         this.userBridge = new TestsUserBridge();
         this.httpBridge = new TestsHttpBridge();
     }
@@ -92,8 +92,8 @@ export class TestsAppBridges extends AppBridges {
         return this.roomBridge;
     }
 
-    public getSubscriptionBridge(): ISubscriptionBridge {
-        return this.subscriptionBridge;
+    public getRoomSubscriptionBridge(): IRoomSubscriptionBridge {
+        return this.roomSubscriptionBridge;
     }
 
     public getUserBridge(): IUserBridge {

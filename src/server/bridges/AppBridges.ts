@@ -7,8 +7,8 @@ import { IListenerBridge } from './IListenerBridge';
 import { IMessageBridge } from './IMessageBridge';
 import { IPersistenceBridge } from './IPersistenceBridge';
 import { IRoomBridge } from './IRoomBridge';
+import { IRoomSubscriptionBridge } from './IRoomSubscriptionBridge';
 import { IServerSettingBridge } from './IServerSettingBridge';
-import { ISubscriptionBridge } from './ISubscriptionBridge';
 import { IUserBridge } from './IUserBridge';
 
 export abstract class AppBridges {
@@ -22,6 +22,6 @@ export abstract class AppBridges {
     public abstract getAppActivationBridge(): IAppActivationBridge;
     public abstract getRoomBridge(): IRoomBridge;
     public abstract getServerSettingBridge(): IServerSettingBridge;
-    public abstract getSubscriptionBridge(): ISubscriptionBridge;
+    public abstract getRoomSubscriptionBridge(): IRoomSubscriptionBridge;
     public abstract getUserBridge(): IUserBridge;
 }

@@ -18,13 +18,13 @@ import { Reader } from './Reader';
 import { RoomBuilder } from './RoomBuilder';
 import { RoomExtender } from './RoomExtender';
 import { RoomRead } from './RoomRead';
+import { RoomSubscriptionRead } from './RoomSubscriptionRead';
 import { ServerSettingRead } from './ServerSettingRead';
 import { ServerSettingsModify } from './ServerSettingsModify';
 import { SettingRead } from './SettingRead';
 import { SettingsExtend } from './SettingsExtend';
 import { SlashCommandsExtend } from './SlashCommandsExtend';
 import { SlashCommandsModify } from './SlashCommandsModify';
-import { SubscriptionRead } from './SubscriptionRead';
 import { UserRead } from './UserRead';
 
 export {
@@ -48,12 +48,12 @@ export {
     RoomBuilder,
     RoomExtender,
     RoomRead,
+    RoomSubscriptionRead,
     ServerSettingRead,
     ServerSettingsModify,
     SettingRead,
     SettingsExtend,
     SlashCommandsExtend,
     SlashCommandsModify,
-    SubscriptionRead,
     UserRead,
 };
