@@ -24,6 +24,10 @@ export class RoomRead implements IRoomRead {
         return this.roomBridge.getCreatorByName(name, this.appId);
     }
 
+    public getDirectByUsernames(usernames: Array<string>): Promise<IRoom> {
+        return this.roomBridge.getDirectByUsernames(usernames, this.appId);
+    }
+
     public getMessages(roomId: string): Promise<IterableIterator<IMessage>> {
         throw new Error('Method not implemented.');
     }

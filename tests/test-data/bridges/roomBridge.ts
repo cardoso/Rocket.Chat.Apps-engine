@@ -24,6 +24,10 @@ export class TestsRoomBridge implements IRoomBridge {
         throw new Error('Method not implemented.');
     }
 
+    public getDirectByUsernames(usernames: Array<string>, appId: string): Promise<IRoom> {
+        throw new Error('Method not implemented.');
+    }
+
     public update(room: IRoom, appId: string): Promise<void> {
         throw new Error('Method not implemented.');
     }
